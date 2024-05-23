@@ -3,39 +3,253 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Lotus</title>
+    <title>Lotus Studio Hairstylism</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <img src="./img/png.png" alt="logo de la marca" />
-      </div>
-      <nav>
-        <ul class="nav-list">
-          <!-- <li><a href="#inicio">Inicio</a></li> -->
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#galeria">Galería</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+      <!-- <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/logo-nav.png" alt="Logo de página Movietime cinemas" class="img-fluid"><h1 class="text-none">Películas</h1></a>
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#hamburguesa" aria-controls="hamburguesa" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-auto" id="hamburguesa">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-end active " aria-current="page" href="index.html"><i class="fa-solid fa-magnifying-glass text-white" title="Buscar"></i><span class="text-white">Buscar</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-end text-white" href="historia.html"><i class="fa-solid fa-heart text-white" title="Corazón relleno"></i><span class=" text-white">Películas favoritas</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <div class="logo">
+            <h1 class="texto-no-visible">Lotus Studio Hairstylism</h1>
+            <img src="./img/png.png" alt="Logo" class="d-inline-block align-text-top navbar-brand img-fluid">
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburguesa" aria-controls="hamburguesa" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-auto" id="hamburguesa">
+            <ul class="navbar-nav nav-list">
+              <!-- <li><a href="#inicio">Inicio</a></li> -->
+              <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+              <li class="nav-item"><a href="#galeria" class="nav-link">Galería</a></li>
+              <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <section id="inicio">
-      <h1>Quienes somos</h1>
-    </section>
-    <section id="servicios">
-      <h1>Servicios</h1>
-    </section>
-    <section id="galeria">
-      <h1>Galería</h1>
-    </section>
-    <section id="contacto">
-      <h1>Contacto</h1>
-    </section>
 
-    <footer>
-      <p>Lotus. Todos los derechos reservados.</p>
-    </footer>
+    <main>
+      <section id="inicio">
+        <h2>Quienes somos</h2>
+      </section>
+      <section id="servicios">
+        <h2>Servicios</h2>
+      </section>
+      <section class="py-5" id="galeria">
+        <div class="container">
+          <div class="mt-2 py-2 titular">
+              <h2 class="text-white">Nuestra galería</h2>
+              <p class="text-white">Quienes confían en nuestros cortes y coloraciones, <em>anímate a pedir el tuyo</em>.</p>
+          </div>
+          <nav class="galeria-menu mb-4">
+              <ul class="nav">
+              <li class="nav-item">
+                  <button class="btn btn-outline-light active" data-filtro="*">Todos</button>
+              </li>
+              <li class="nav-item">
+                  <button class="btn btn-outline-light" data-filtro="corte">Corte</button>
+              </li>
+              <li class="nav-item">
+                  <button class="btn btn-outline-light" data-filtro="color">Coloración</button>
+              </li>
+              </ul>
+          </nav>
+          <div class="galeria-item row">
+              <div class="item color col-lg-3 col-md-4 col-sm-6">
+                <a href="img/galeria/img-max/color_2.jpg" class="linkImage" target="_blank">
+                  <picture>
+                    <source srcset="img/galeria/movil/color_2.jpg" media="(max-width: 576px)" >
+                    <img class="img-fluid" src="img/galeria/color_2.jpg" alt="Coloración de un caballero a rubio de otra pose arriba">
+                  </picture>
+                  <div class="hover-texto-imagen">
+                    <p class="text-white">Ver Imagen <i class="fa-solid fa-arrow-up-right-from-square text-white fs-4"></i></p>
+                  </div>
+                </a>
+              </div>
+              <div class="item corte col-lg-3 col-md-4 col-sm-6">
+                <a href="img/galeria/img-max/corte_3.jpg" class="linkImage position-relative" target="_blank">
+                  <picture>
+                    <source srcset="img/galeria/movil/corte_3.jpg" media="(max-width: 576px)" >
+                    <img class="img-fluid" src="img/galeria/corte_3.jpg" alt="Corte de hombre primero de una pose mejor">
+                  </picture>
+                  <div class="hover-texto-imagen">
+                    <p class="text-white">Ver Imagen <i class="fa-solid fa-arrow-up-right-from-square text-white fs-4"></i></p>
+                  </div>
+                </a>
+              </div>
+              <div class="item color col-lg-3 col-md-4 col-sm-6">
+                <a href="img/galeria/img-max/color_4.jpg" class="linkImage" target="_blank">
+                  <picture>
+                    <source srcset="img/galeria/movil/color_4.jpg" media="(max-width: 576px)" >
+                    <img class="img-fluid" src="img/galeria/color_4.jpg" alt="Coloración de un caballero a rubio con cara feliz">
+                  </picture>
+                  <div class="hover-texto-imagen">
+                    <p class="text-white">Ver Imagen <i class="fa-solid fa-arrow-up-right-from-square text-white fs-4"></i></p>
+                  </div>
+                </a>
+              </div>
+              <div class="item corte col-lg-3 col-md-4 col-sm-6">
+                <a href="img/galeria/img-max/corte_4.jpg" class="linkImage" target="_blank">
+                  <picture>
+                    <source srcset="img/galeria/movil/corte_4.jpg" media="(max-width: 576px)" >
+                    <img class="img-fluid" src="img/galeria/corte_4.jpg" alt="Corte de otro caballero">
+                  </picture>
+                  <div class="hover-texto-imagen">
+                    <p class="text-white">Ver Imagen <i class="fa-solid fa-arrow-up-right-from-square text-white fs-4"></i></p>
+                  </div>
+                </a>
+              </div>
+              <div class="item corte col-lg-3 col-md-4 col-sm-6">
+                <a href="img/galeria/img-max/corte_1.jpg" class="linkImage" target="_blank"> 
+                  <picture>
+                    <source srcset="img/galeria/movil/corte_1.jpg" media="(max-width: 576px)" >
+                    <img class="img-fluid" src="img/galeria/corte_1.jpg" alt="Corte de hombre primero">
+                  </picture>
+                  <div class="hover-texto-imagen">
+                    <p class="text-white">Ver Imagen <i class="fa-solid fa-arrow-up-right-from-square text-white fs-4"></i></p>
+                  </div>
+                </a>
+              </div>
+              <div class="item color col-lg-3 col-md-4 col-sm-6">
+                <a href="img/galeria/img-max/color_6.jpg" class="linkImage" target="_blank">
+                  <picture>
+                    <source srcset="img/galeria/movil/color_6.jpg" media="(max-width: 576px)" >
+                    <img class="img-fluid" src="img/galeria/color_6.jpg" alt="Coloración de un caballero a violeta y rosa desde arriba un costado con cara feliz">
+                  </picture>
+                  <div class="hover-texto-imagen">
+                    <p class="text-white">Ver Imagen <i class="fa-solid fa-arrow-up-right-from-square text-white fs-4"></i></p>
+                  </div>
+                </a>
+              </div>
+              <div class="item color col-lg-3 col-md-4 col-sm-6">
+                <a href="img/galeria/img-max/color_5.jpg" class="linkImage" target="_blank">
+                  <picture>
+                    <source srcset="img/galeria/movil/color_5.jpg" media="(max-width: 576px)" >
+                    <img class="img-fluid" src="img/galeria/color_5.jpg" alt="Coloración de un caballero a violeta y rosa desde frente arriba">
+                  </picture>
+                  <div class="hover-texto-imagen">
+                    <p class="text-white">Ver Imagen <i class="fa-solid fa-arrow-up-right-from-square text-white fs-4"></i></p>
+                  </div>
+                </a>
+              </div>
+              <div class="item corte col-lg-3 col-md-4 col-sm-6">
+                <a href="img/galeria/img-max/corte_2.jpg" class="linkImage" target="_blank"> 
+                  <picture>
+                    <source srcset="img/galeria/movil/corte_2.jpg" media="(max-width: 576px)" >
+                    <img class="img-fluid" src="img/galeria/corte_2.jpg" alt="Corte de hombre primero de otra pose">
+                  </picture>
+                  <div class="hover-texto-imagen">
+                    <p class="text-white">Ver Imagen <i class="fa-solid fa-arrow-up-right-from-square text-white fs-4"></i></p>
+                  </div>
+                </a>
+              </div>
+              <div class="item color col-lg-3 col-md-4 col-sm-6">
+                <a href="img/galeria/img-max/color_1.jpg" class="linkImage" target="_blank">
+                  <picture>
+                    <source srcset="img/galeria/movil/color_1.jpg" media="(max-width: 576px)" >
+                    <img class="img-fluid" src="img/galeria/color_1.jpg" alt="Coloración de un caballero a rubio">
+                  </picture>
+                  <div class="hover-texto-imagen">
+                    <p class="text-white">Ver Imagen <i class="fa-solid fa-arrow-up-right-from-square text-white fs-4"></i></p>
+                  </div>
+                </a>
+              </div>
+              <div class="item color col-lg-3 col-md-4 col-sm-6">
+                <a href="img/galeria/img-max/color_3.jpg" class="linkImage" target="_blank">
+                  <picture>
+                    <source srcset="img/galeria/movil/color_3.jpg" media="(max-width: 576px)" >
+                    <img class="img-fluid" src="img/galeria/color_3.jpg" alt="Coloración de un caballero a violeta y rosa">
+                  </picture>
+                  <div class="hover-texto-imagen">
+                    <p class="text-white">Ver Imagen <i class="fa-solid fa-arrow-up-right-from-square text-white fs-4"></i></p>
+                  </div>
+                </a>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacto">
+        <h2>Contacto</h2>
+      </section>
+    </main>
+
+
+    <footer class="bg-dark d-flex align-items-center justify-content-center py-5 z-3 position-relative">
+      <div class="container">
+          <div class="row pb-5 mb-5 border-bottom">
+            <div class="col-12 col-lg-7 mb-5">
+              <div class="row">
+                <div class="col-6 col-md-3 mb-5">
+                  <h2 class="mb-3 text-white h6">Compañía</h2>
+                  <ul class="list-unstyled">
+                    <li class="mb-3"><a class="btn btn-link p-0 text-secondary" href="#">Nosotros</a></li>
+                    <li class="mb-3"><a class="btn btn-link p-0 text-secondary" href="#">Carreras</a></li>
+                    <li><a class="btn btn-link p-0 text-secondary" href="#">Blog</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-3 mb-16 mb-md-0">
+                  <h2 class="mb-3 text-white h6">Links</h2>
+                  <ul class="list-unstyled">
+                    <li class="mb-3"><a class="btn btn-link p-0 text-secondary" href="#servicios">Servicios</a></li>
+                    <li class="mb-3"><a class="btn btn-link p-0 text-secondary text-start" href="#galeria">Galería</a></li>
+                    <li class="mb-3"><a class="btn btn-link p-0 text-secondary text-start" href="#contacto">Contacto</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                  <h2 class="mb-3 text-white h6">Legal</h2>
+                  <ul class="list-unstyled">
+                    <li class="mb-3"><a class="btn btn-link p-0 text-secondary text-start" href="#">Términos y condiciones</a></li>
+                    <li class="mb-3"><a class="btn btn-link p-0 text-secondary" href="#">Equipo</a></li>
+                    <li><a class="btn btn-link p-0 text-secondary text-start" href="#">Política de privacidad</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5">
+              <h2 class="mb-3 text-white h6">Newsletter</h2>
+              <p class="text-secondary mb-2">Obtén los últimos beneficios y ofertas.</p>
+              <form action="#" id="Newsletter">
+                <div class="input-group">
+                  <input class="form-control" type="email" placeholder="Escribe tu e-mail...">
+                  <button class="btn btn-primary">Subscribirse</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between text-center logo">
+              <a class="d-inline-block mb-2 mb-sm-0" href="#">
+                  <img class="img-fluid" src="img/png.png" alt="Logo de Lotus">
+              </a>
+              <p class="fs-9 text-secondary mb-0">Copyright © Lotus. Todos los derechos reservados.</p>
+          </div>
+        </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   </body>
 </html>
